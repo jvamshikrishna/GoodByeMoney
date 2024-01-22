@@ -14,6 +14,8 @@
 		9623E0002B55FD1800FCFE70 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9623DFFF2B55FD1800FCFE70 /* Expenses.swift */; };
 		9623E0022B55FD8900FCFE70 /* Reports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9623E0012B55FD8900FCFE70 /* Reports.swift */; };
 		9623E0042B5603A000FCFE70 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9623E0032B5603A000FCFE70 /* Settings.swift */; };
+		9623E0062B560B6300FCFE70 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9623E0052B560B6200FCFE70 /* Categories.swift */; };
+		9623E0092B5DF1BD00FCFE70 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9623E0082B5DF1BD00FCFE70 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		9623DFFF2B55FD1800FCFE70 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		9623E0012B55FD8900FCFE70 /* Reports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reports.swift; sourceTree = "<group>"; };
 		9623E0032B5603A000FCFE70 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		9623E0052B560B6200FCFE70 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		9623E0082B5DF1BD00FCFE70 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 		9623DFEE2B55FB2F00FCFE70 /* GoodByeMoney */ = {
 			isa = PBXGroup;
 			children = (
+				9623E0072B5DF1B000FCFE70 /* Model */,
 				9623DFFE2B55FCB900FCFE70 /* Components */,
 				9623DFFD2B55FCAA00FCFE70 /* Screens */,
 				9623DFEF2B55FB2F00FCFE70 /* GoodByeMoneyApp.swift */,
@@ -81,6 +86,7 @@
 				9623DFFF2B55FD1800FCFE70 /* Expenses.swift */,
 				9623E0012B55FD8900FCFE70 /* Reports.swift */,
 				9623E0032B5603A000FCFE70 /* Settings.swift */,
+				9623E0052B560B6200FCFE70 /* Categories.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -90,6 +96,14 @@
 			children = (
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		9623E0072B5DF1B000FCFE70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9623E0082B5DF1BD00FCFE70 /* Category.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +181,8 @@
 				9623DFF02B55FB2F00FCFE70 /* GoodByeMoneyApp.swift in Sources */,
 				9623E0022B55FD8900FCFE70 /* Reports.swift in Sources */,
 				9623E0042B5603A000FCFE70 /* Settings.swift in Sources */,
+				9623E0062B560B6300FCFE70 /* Categories.swift in Sources */,
+				9623E0092B5DF1BD00FCFE70 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

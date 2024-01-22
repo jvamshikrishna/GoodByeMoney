@@ -15,6 +15,9 @@ struct ContentView: View {
             Reports()
                 .tabItem { Label("Report", systemImage: "chart.bar") }
             
+            Text("")
+                .tabItem { Label("Add", systemImage: "plus") }
+            
             Settings()
                 .tabItem { Label("Settings", systemImage: "gearshape")}
             
