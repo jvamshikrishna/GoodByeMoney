@@ -13,6 +13,7 @@ struct Reports: View {
             Text("Hello, Reports!")
                 .navigationTitle("Reports")
         }
+        .toolbar(.visible, for: .tabBar)
     }
 }
 

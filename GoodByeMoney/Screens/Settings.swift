@@ -27,7 +27,9 @@ struct Settings: View {
                 
             }
             .navigationTitle("Settings")
+            
         }
+        .toolbar(.visible, for: .tabBar)
     }
 }
 

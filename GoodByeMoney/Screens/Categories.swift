@@ -22,7 +22,6 @@ struct Categories: View {
     @FocusState var inputFocused: Bool
     
     
-    
     func handleSubmit(){
         if newCategoryName.count > 0{
             categories.append(Category(id: categories.count, name: newCategoryName, color: newCategoryColor))
@@ -31,6 +30,10 @@ struct Categories: View {
         else{
             isShowingAlert = true
         }
+    }
+    
+    func handleDelete(at offsets: IndexSet){
+        categories.remove(atOffsets: offsets)
     }
     
     var body: some View {
@@ -47,6 +50,7 @@ struct Categories: View {
                     }
                     
                 }
+                .onDelete(perform: handleDelete)
             }
             
             .scrollContentBackground(.hidden)
@@ -63,6 +67,7 @@ struct Categories: View {
                     TextField("Type new category name",text: $newCategoryName)
                         .focused($inputFocused)
                         .textFieldStyle(.roundedBorder)
+                        .submitLabel(.done)
                         .onSubmit {
                             handleSubmit()
                         }
@@ -97,6 +102,7 @@ struct Categories: View {
             }
             .padding()
             .navigationTitle("Categories")
+            .toolbar(.hidden, for: .tabBar) // to hide tabbar in categories view orelse tab bar is also showing
         }
         
     }

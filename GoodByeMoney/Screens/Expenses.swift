@@ -13,6 +13,7 @@ struct Expenses: View {
             Text("Hello, Expenses!")
                 .navigationTitle("Expenses")
         }
+        .toolbar(.visible, for: .tabBar)
     }
 }
 
